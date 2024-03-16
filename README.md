@@ -22,19 +22,19 @@ Usage
 
 The application supports the following commands:
 
-    Who is head of department {department_name}
+    - Who is head of department {department_name}
         Output: "Head of {department_name} department is {head_of_department_name}" or "Department not found"
 
-    Show {department_name} statistics
+    - Show {department_name} statistics
         Output: "assistants - {assistants_count}, associate professors - {associate_professors_count}, professors - {professors_count}" or "Department not found or has no employees"
 
-    Show the average salary for the department {department_name}
+    - Show the average salary for the department {department_name}
         Output: "The average salary of {department_name} is {average_salary}" or "Department not found or has no employees"
 
-    Show count of employee for {department_name}
+    - Show count of employee for {department_name}
         Output: "{department_name} has {employee_count} employees" or "Department not found or has no employees"
 
-    Global search by {template}
+    - Global search by {template}
         Example Input: "Global search by van"
         Output: "Ivan Petrenko, Petro Ivanov"
 
@@ -43,9 +43,9 @@ Architectural Decisions
 
 The project was designed with simplicity and educational purposes in mind. As such, some common patterns and practices were considered but ultimately not implemented due to the project's scope and complexity:
 
-    DTOs and Command Pattern: While DTOs (Data Transfer Objects) and the Command Pattern for handling requests could enhance the project's architecture, they were deemed unnecessary for this straightforward application. Implementing these patterns could be considered for larger projects with more complex requirements.
+- DTOs and Command Pattern: While DTOs (Data Transfer Objects) and the Command Pattern for handling requests could enhance the project's architecture, they were deemed unnecessary for this straightforward application. Implementing these patterns could be considered for larger projects with more complex requirements.
 
-    Error Handling: Basic error handling is implemented, with the application providing user-friendly messages for common issues like missing departments or employees.
+- Error Handling: Basic error handling is implemented, with the application providing user-friendly messages for common issues like missing departments or employees.
 
 Expansion and Further Development
 
